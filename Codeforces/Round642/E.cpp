@@ -68,11 +68,6 @@ int main()
 		{
 			sum[i] = sum[i-1]+s[i]-'0';
 		}
-		// if(k==1)
-		// {
-		// 	cout << max(min(sum[n-1]-1,n-sum[n-1]),0) << endl;
-		// 	continue;
-		// }
 		if(s[0]=='0')
 		{
 			dp[0][0] = 0;
@@ -111,17 +106,6 @@ int main()
 				dp[i][0] = min(dp[i-1][0],dp[i-1][1]);
 			}
 		}
-		// debug;
-		// for(int i=0;i<n;++i)
-		// {
-		// 	cout << dp[i][0] << " ";
-		// }
-		// cout << endl;
-		// for(int i=0;i<n;++i)
-		// {
-		// 	cout << dp[i][1] << " ";
-		// }
-		// cout << endl;
 		cout << min(dp[n-1][0],dp[n-1][1]) << endl;
 	}
 	return 0;
