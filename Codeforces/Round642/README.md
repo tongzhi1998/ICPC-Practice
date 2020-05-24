@@ -1,0 +1,1 @@
+########## Personal Submission For Codeforces Round 642 ########
