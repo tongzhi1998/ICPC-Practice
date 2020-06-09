@@ -31,5 +31,6 @@
 *.out
 *.app
 run
-
 *.in
+
+.DS_Store
